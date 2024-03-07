@@ -1,0 +1,116 @@
+/* Unique background colors for each section */
+#about {
+    background-color: #e9ecef; /* A light gray color */
+}
+
+#skills {
+    background-color: #dee2e6; /* A slightly darker shade of gray */
+}
+
+#projects {
+    background-color: #ced4da; /* A medium gray */
+}
+
+#achievements {
+    background-color: #adb5bd; /* A muted blue-gray */
+}
+
+#contact {
+    background-color: #6c757d; /* A dark gray */
+}
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-bottom: 60px; /* Adjust this value based on the actual height of your footer */
+    background-color: #f9fafb; /* Light grey for the main background */
+    text-align: center;
+    color: #333; /* Ensuring good contrast */
+    position: relative; /* Ensure the body is positioned relative for z-index to work correctly */
+    z-index: 1; /* Position the body above the footer */
+}
+
+header {
+    background-color: #333; /* Standard dark grey for the header */
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white; /* Adjusted for contrast with the dark header background */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul li a:hover, a:hover {
+    background-color: #555; /* A lighter shade of grey for hover */
+    color: #fff;
+}
+
+section {
+    background-color: #ffffff; /* White background for sections */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 20px auto; /* Centers the section with auto left and right margins */
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333; /* Standard dark grey for the footer */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Adjust as needed based on your footer's content */
+    z-index: 10;
+}
+
+/* Font and image responsiveness */
+html {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header, section, footer {
+        padding: 10px;
+    }
+
+    footer {
+        position: relative; /* Adjust footer positioning on small screens */
+    }
+
+    .projects div {
+        margin-bottom: 20px;
+    }
+}
